@@ -1,7 +1,8 @@
 syntax on
 filetype plugin indent on
 
-colorscheme darkblue
+set background=dark
+colorscheme hybrid
 
 set guifont=Menlo\ Regular:h20"
 
@@ -50,7 +51,6 @@ set noerrorbells
 
 set backspace=2 " make backspace work like most other apps
 
-set background=dark
 
 set completeopt=menuone
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
@@ -88,5 +88,4 @@ set spelllang=en,cjk
 "  autocmd!
 "  autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
 "augroup END
-
 
