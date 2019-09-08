@@ -12,6 +12,7 @@ set guifont=Menlo\ Regular:h20"
 set ruler
 set number
 set cursorline
+set cursorcolumn
 set laststatus=2
 set cmdheight=2
 set showmatch
@@ -89,3 +90,17 @@ set spelllang=en,cjk
 "  autocmd BufReadPost,BufNewFile,Syntax * call s:SpellConf()
 "augroup END
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'elmcast/elm-vim'
+
+call plug#end()
+
+"highlight ColorColumn ctermbg=gray
+set colorcolumn=80
