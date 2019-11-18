@@ -27,7 +27,15 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-
+"
+" # Add plugins below
+Plugin 'townk/vim-autoclose'
+Plugin 'scrooloose/nerdtree'
+Plugin 'elmcast/elm-vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'rhysd/vim-clang-format'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
