@@ -52,6 +52,12 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "------------------------ Vundle setting end -----------------------------------
 
+"------------------------ vim-plug setting start -------------------------------
+call plug#begin('~/.vim/plugged')
+
+call plug#end()
+"------------------------ vim-plug setting end ---------------------------------
+
 syntax on
 filetype plugin indent on
 
