@@ -36,6 +36,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'w0ng/vim-hybrid'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -155,12 +156,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'elmcast/elm-vim'
-
-call plug#end()
 
 "highlight ColorColumn ctermbg=gray
 set colorcolumn=80
