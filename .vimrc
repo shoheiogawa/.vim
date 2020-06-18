@@ -31,14 +31,11 @@ Plugin 'VundleVim/Vundle.vim'
 " # Add plugins below
 Plugin 'townk/vim-autoclose'
 Plugin 'scrooloose/nerdtree'
-Plugin 'elmcast/elm-vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'vim-pandoc/vim-pandoc'
-"Plugin 'vim-pandoc/vim-pandoc-syntax'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -98,9 +95,9 @@ set smartcase
 set wrapscan
 
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set autoindent
 set smartindent
 
