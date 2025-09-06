@@ -36,6 +36,12 @@ Plugin 'Shougo/deoplete.nvim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'pangloss/vim-javascript'
+Plugin 'evanleck/vim-svelte'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'eigenfoo/stan-vim'
+Plugin 'chrisbra/csv.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -54,11 +60,11 @@ filetype plugin indent on    " required
 
 "------------------------ vim-plug setting start -------------------------------
 call plug#begin('~/.vim/plugged')
-
 call plug#end()
 "------------------------ vim-plug setting end ---------------------------------
 
 syntax on
+filetype plugin on
 filetype plugin indent on
 
 set background=dark
@@ -158,3 +164,7 @@ endif
 
 "highlight ColorColumn ctermbg=gray
 set colorcolumn=80
+
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+set spell
